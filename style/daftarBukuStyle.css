@@ -1,0 +1,208 @@
+/* Reset default */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: #f5f5f5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+.container {
+  background: #ecf0f3;
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 8px 8px 16px #babecc, -8px -8px 16px #ffffff;
+  max-width: 900px;
+  width: 100%;
+}
+
+.title {
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+/* Filter dropdown */
+label[for="filterJumlah"] {
+  font-size: 14px;
+  margin-right: 5px;
+}
+
+#filterJumlah {
+  padding: 5px 10px;
+  border-radius: 10px;
+  border: none;
+  background: #ecf0f3;
+  box-shadow: inset 4px 4px 8px #babecc, inset -4px -4px 8px #ffffff;
+  outline: none;
+}
+
+/* Table Styling */
+.table-wrapper {
+  overflow-x: auto;
+  margin-top: 10px;
+  border-radius: 10px;
+  box-shadow: 4px 4px 8px #babecc, -4px -4px 8px #ffffff;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+thead {
+  background: #dcdde1;
+  font-weight: bold;
+}
+
+thead th {
+  padding: 10px;
+  text-align: left;
+}
+
+tbody tr:nth-child(odd) {
+  background: #ecf0f3;
+}
+
+tbody tr:nth-child(even) {
+  background: #dde1e7;
+}
+
+td {
+  padding: 10px;
+  font-size: 14px;
+  color: #333;
+}
+
+td img {
+  border-radius: 5px;
+}
+
+/* Buttons */
+.btn-add,
+.back-btn,
+.btn-edit,
+.btn-delete {
+  border: none;
+  padding: 8px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  box-shadow: 3px 3px 6px #babecc, -3px -3px 6px #ffffff;
+  transition: all 0.2s;
+}
+
+.btn-add,
+.back-btn {
+  display: inline-block;
+  background: #4caf50;
+  color: white;
+  margin: 5px;
+}
+
+.back-btn a {
+  text-decoration: none;
+  color: white;
+}
+
+.btn-add:hover,
+.back-btn:hover {
+  background: #43a047;
+}
+
+.btn-edit {
+  background: #ffb300;
+  color: white;
+  padding: 5px 8px;
+  margin: 10px;
+}
+
+.btn-edit:hover {
+  background: #ffa000;
+}
+
+.btn-delete {
+  background: #e53935;
+  color: white;
+  padding: 5px 8px;
+  margin: 10px;
+  text-decoration: none;
+}
+
+.btn-delete:hover {
+  background: #d32f2f;
+}
+
+/* Form Styling */
+#formContainer,
+#formEditContainer {
+  background: #ecf0f3;
+  padding: 15px;
+  border-radius: 15px;
+  box-shadow: 5px 5px 10px #babecc, -5px -5px 10px #ffffff;
+  margin-top: 20px;
+}
+
+form label {
+  font-size: 14px;
+  display: block;
+  margin-top: 8px;
+}
+
+form input,
+form textarea {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  border-radius: 10px;
+  border: none;
+  background: #ecf0f3;
+  box-shadow: inset 3px 3px 6px #babecc, inset -3px -3px 6px #ffffff;
+  outline: none;
+}
+
+form button {
+  margin-top: 10px;
+  background: #4caf50;
+  color: white;
+  padding: 8px 12px;
+  border-radius: 10px;
+  cursor: pointer;
+  border: none;
+  box-shadow: 3px 3px 6px #babecc, -3px -3px 6px #ffffff;
+}
+
+form button:hover {
+  background: #43a047;
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
+  .container {
+    padding: 15px;
+  }
+  table {
+    font-size: 12px;
+  }
+  .btn-add,
+  .back-btn {
+    font-size: 12px;
+    padding: 6px 10px;
+  }
+  .btn-edit,
+  .btn-delete {
+    font-size: 12px;
+    padding: 4px 6px;
+    gap: 5px;
+  }
+}

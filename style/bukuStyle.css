@@ -1,0 +1,150 @@
+/* Reset Style */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Arial", sans-serif;
+}
+
+body {
+  background: #f0f0f3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  flex-direction: column;
+  padding: 20px;
+}
+
+/* Container utama */
+.container {
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 10px 10px 30px #d1d9e6, -10px -10px 30px #ffffff;
+  max-width: 900px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Judul */
+h1 {
+  font-size: 26px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+/* Grid daftar buku */
+.book-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 20px;
+  padding: 10px;
+}
+
+/* Card Buku */
+.book-card {
+  background: #f9f9f9;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 5px 5px 15px #d1d9e6, -5px -5px 15px #ffffff;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.book-card:hover {
+  transform: scale(1.05);
+}
+
+/* Gambar buku (potret 3:4) */
+.book-card img {
+  width: 100%;
+  aspect-ratio: 3 / 4;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+/* Detail Buku */
+.book-card h3 {
+  font-size: 18px;
+  margin: 10px 0;
+}
+
+.book-card p {
+  font-size: 14px;
+  color: #555;
+}
+
+/* Tombol */
+.btn {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 8px 15px;
+  font-size: 14px;
+  text-decoration: none;
+  background: #3498db;
+  color: white;
+  border-radius: 8px;
+  box-shadow: 5px 5px 15px #d1d9e6, -5px -5px 15px #ffffff;
+  transition: all 0.3s ease;
+  border: none;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background: #2980b9;
+  box-shadow: inset 5px 5px 15px #1c5985, inset -5px -5px 15px #3498db;
+}
+
+/* Pagination */
+.pagination {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.page-number {
+  font-size: 14px;
+  font-weight: bold;
+  color: #333;
+}
+
+/* Tombol kembali */
+.back-btn {
+  margin-top: 20px;
+  background: #e74c3c;
+}
+
+.back-btn:hover {
+  background: #c0392b;
+}
+
+/* Responsif */
+@media (max-width: 768px) {
+  .container {
+    padding: 15px;
+  }
+
+  h1 {
+    font-size: 22px;
+  }
+
+  .book-list {
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  }
+
+  .book-card img {
+    height: 200px; /* Tetap dengan rasio 3:4 */
+  }
+
+  .btn {
+    padding: 7px 12px;
+    font-size: 13px;
+  }
+
+  .pagination {
+    flex-direction: column;
+  }
+}

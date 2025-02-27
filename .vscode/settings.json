@@ -1,0 +1,7 @@
+{
+  "editor.fontFamily": "Cascadia Code, Anonymous Pro, Hasklig",
+  "editor.fontSize": 14,
+  "editor.tabSize": 2,
+  "editor.renderWhitespace": "boundary",
+  "editor.mouseWheelZoom": true
+}
